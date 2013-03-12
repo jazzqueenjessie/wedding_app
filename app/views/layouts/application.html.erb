@@ -14,14 +14,14 @@
 <div id="main-wrapper">
   <div id="titlebar">Jessie &amp; Jordan</div>
   <%= yield %>
-
+  q<%= debug(params) if Rails.env.development? %>
   <div id="underdev"><p>This website is still under development! Check back later to make a username, RSVP, and check out other wedding information!</p></div>
-  <div id="navigation"><!-- add hrefs later-->
-    <%= link_to "our story",          '#' %>
-    <%= link_to "the engagement",     '#' %>
-    <%= link_to "user login",        '#' %>
-    <%= link_to "wedding party",      '#' %>
-    <%= link_to "travel information", '#' %>
+  <div id="navigation">
+    <%= link_to "our story", story_path %>
+    <%= link_to "the engagement", engagement_path %>
+    <%= link_to "user login", userlog_path %>
+    <%= link_to "wedding party", weddingparty_path %>
+    <%= link_to "travel information", travel_path %>
     <!--%= link_to "wedding schedule",   '#' %-->
     <!--%= link_to "registry",           '#' %-->
   </div>
