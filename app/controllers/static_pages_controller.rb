@@ -5,9 +5,17 @@ class StaticPagesController < ApplicationController
   def story
   end
 
+  def engagement
+  end
+  
+  def userlog
+  end
+  
+  def weddingparty
+  end
+  
   def travel
   end
   
-  def engagement
-  end
+
 end

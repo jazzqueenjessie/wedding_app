@@ -1,11 +1,15 @@
 WeddingApp::Application.routes.draw do
-  get "static_pages/home"
+  get "users/new"
 
-  get "static_pages/story"
+  root to: "static_pages#home"
 
-  get "static_pages/travel"
+  match '/signup',       to: 'users#new'
   
-  get "static_pages/engagement"
+  match '/story',        to: 'static_pages#story'
+  match '/engagement',   to: 'static_pages#engagement'
+  match '/userlog',      to: 'static_pages#userlog'
+  match '/weddingparty', to: 'static_pages#weddingparty'
+  match '/travel',       to: 'static_pages#travel'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

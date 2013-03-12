@@ -1,2 +1,4 @@
-	<div id="titlebar">Jessie &amp; Jordan</div>
+<% provide(:title, 'Our Story') %>
+
+  <div id="titlebar">Jessie &amp; Jordan</div>
     <div id="subtitle">Our Story</div>
