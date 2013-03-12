@@ -4,6 +4,8 @@ WeddingApp::Application.routes.draw do
   get "static_pages/story"
 
   get "static_pages/travel"
+  
+  get "static_pages/engagement"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

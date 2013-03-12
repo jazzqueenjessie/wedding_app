@@ -1,5 +1,3 @@
-<% provide(:title, 'Travel Information') %>
-
 	<div id="titlebar">Jessie &amp; Jordan</div>
 
     <div id="subtitle">Travel Information</div>

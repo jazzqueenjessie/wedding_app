@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def travel
   end
+  
+  def engagement
+  end
 end

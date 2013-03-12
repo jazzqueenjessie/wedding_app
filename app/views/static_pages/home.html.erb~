@@ -1,6 +1,3 @@
-
-<% provide(:title, '1/4/14') %>
-
-  <div id="titlebar">Jessie &amp; Jordan</div>
+	<div id="titlebar">Jessie &amp; Jordan</div>
 
     <div id="subtitle">We're getting married, and we hope you'll be there - 1/4/14</div>
