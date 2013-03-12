@@ -13,9 +13,19 @@
 <body>
 <div id="main-wrapper">
   <div id="titlebar">Jessie &amp; Jordan</div>
+  
+  <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
+  
   <%= yield %>
   q<%= debug(params) if Rails.env.development? %>
+  
+  
   <div id="underdev"><p>This website is still under development! Check back later to make a username, RSVP, and check out other wedding information!</p></div>
+  
+  
+  
   <div id="navigation">
     <%= link_to "our story", story_path %>
     <%= link_to "the engagement", engagement_path %>
@@ -28,6 +38,6 @@
 
 </div><!--from main wrapper>
 
-
+      <%= debug(params) if Rails.env.development? %>
 </body>
 </html>
