@@ -1,5 +1,10 @@
 == Welcome to Rails
 
+This is an application for Jordan and Jessie's wedding in 2014!
+
+
+==============================
+
 Rails is a web-application framework that includes everything needed to create
 database-backed web applications according to the Model-View-Control pattern.
 
