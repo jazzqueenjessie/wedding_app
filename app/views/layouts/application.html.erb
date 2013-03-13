@@ -19,14 +19,11 @@
   <% end %>
   
   <%= yield %>
-  q<%= debug(params) if Rails.env.development? %>
-  
-  
-  <div id="underdev"><p>This website is still under development! Check back later to make a username, RSVP, and check out other wedding information!</p></div>
-  
+  <%= debug(params) if Rails.env.development? %> 
   
   
   <div id="navigation">
+	<%= link_to "home", root_path %>
     <%= link_to "our story", story_path %>
     <%= link_to "the engagement", engagement_path %>
     <%= link_to "user login", userlog_path %>
