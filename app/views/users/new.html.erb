@@ -1,8 +1,7 @@
 
 <%= provide(:title, 'Sign up') %>
 <div id="subtitle">Create a user login!</div>
-<div id="content">
-Signing up for a username will allow you to post on the website, RSVP with your account, participate in polls, and access private content.
+<br>
 <div class="row">
   <div class="span6 offset3">
     <%= form_for(@user) do |f| %>
@@ -22,9 +21,9 @@ Signing up for a username will allow you to post on the website, RSVP with your 
 
       <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
     <% end %>
+    <div id="content">
+Signing up for a username will allow you to post on the website, RSVP with your account, participate in polls, and access private content.
+    </div><br>
+If you'd like to RSVP without creating a login, check back later for the RSVP form.
   </div>
-</div>
-
-<br>
-If you'd like to RSVP without creating a login, [click here].
 </div>

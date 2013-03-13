@@ -8,15 +8,15 @@ describe "User pages" do
     let(:user) { FactoryGirl.create(:user) }
     before { visit user_path(user) }
 
-    #it { should have_selector('h1',    text: user.name) }#change to have_content
+    #it { should have_content(text: user.name) }
     it { should have_selector('title', text: user.name) }
   end  
 
   describe "signup page" do
     before { visit signup_path }
 
-    #it { should have_selector('h1',    text: 'Sign up') }#change to have_content
-    #it { should have_selector('title', text: full_title('Sign up')) }
+    #it { should have_content(text: 'Sign up') }
+    #it { should have_content(text: full_title('Sign up')) }
   end
   
   describe "signup" do
@@ -57,8 +57,14 @@ describe "User pages" do
 
         it { should have_selector('title', text: user.name) }
         it { should have_selector('div.alert.alert-success', text: 'Welcome') }
-      end
+               
+        it { should have_link('sign out') }
 
+        describe "followed by signout" do
+          before { click_link "sign out" }
+          it { should have_link('sign in')}
+        end
+      end
     end
   end
   
