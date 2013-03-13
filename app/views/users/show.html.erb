@@ -1,11 +1,12 @@
 <% provide(:title, @user.name) %>
+<div id="subtitle">My Account</div>
 <div class="row">
   <aside class="span4">
     <section>
-      <h1>
+      <div id="content">
         <%= gravatar_for @user %>
         <%= @user.name %>
-      </h1>
+      </div>
     </section>
   </aside>
 </div>
