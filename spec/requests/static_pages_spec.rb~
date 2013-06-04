@@ -72,7 +72,7 @@ describe "StaticPages" do
     it "should have the content 'Location'" do
       visit location_path
       page.should have_content('Jessie & Jordan')
-      page.should have_content('Location & Travel Information')
+      page.should have_content('Location and Travel Information')
     end
     
     it "should have the title 'Location'" do

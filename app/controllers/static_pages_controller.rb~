@@ -2,20 +2,24 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def story
+  def us
   end
 
-  def engagement
+  def wedding
   end
   
-  def userlog
+  def bridalparty
   end
   
-  def weddingparty
+  def location
   end
   
-  def travel
+  def photos
   end
   
+  def registry
+  end
 
+  def RSVP
+  end
 end
