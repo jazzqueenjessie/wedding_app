@@ -68,7 +68,7 @@ WeddingApp::Application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, 
   # and use secure cookies.
   config.force_ssl = true
-"""  
+  
   #trying to configure SMTP server to send email
   require 'tlsmail'    
   Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
@@ -85,6 +85,6 @@ WeddingApp::Application.configure do
     :authentication     => :plain,
     :user_name          => 'jessieandjordan2014@gmail.com',
     :password           => 'SMTP_PASSWORD'
-}"""
+}
   
 end

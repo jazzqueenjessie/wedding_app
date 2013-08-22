@@ -80,6 +80,8 @@ GEM
     nokogiri (1.5.6)
     pg (0.12.2)
     polyglot (0.3.3)
+    pony (1.5)
+      mail (> 2.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -141,6 +143,7 @@ GEM
       ref
     thor (0.17.0)
     tilt (1.3.5)
+    tlsmail (0.0.1)
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
@@ -166,9 +169,11 @@ DEPENDENCIES
   factory_girl_rails (= 4.1.0)
   jquery-rails (= 2.0.2)
   pg (= 0.12.2)
+  pony
   rails (= 3.2.12)
   rspec-rails (= 2.11.0)
   sass-rails (= 3.2.5)
   sqlite3 (= 1.3.5)
   therubyracer
+  tlsmail
   uglifier (>= 1.2.3)

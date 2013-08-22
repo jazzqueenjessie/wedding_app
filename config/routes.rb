@@ -1,6 +1,9 @@
 WeddingApp::Application.routes.draw do
   #resources :users
   #resources :sessions, only: [:new, :create, :destroy]
+  resources :rsvps, :only => [:new, :create] do
+    get 'thank_you', :on => :collection
+  end
 
   root to: "static_pages#home"
 
