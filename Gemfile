@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'pony'
-gem 'tlsmail'
+#gem 'tlsmail'
+gem ruby '1.9.2'
 gem 'rails', '3.2.12'
 gem 'bootstrap-sass-rails'
 gem 'bootstrap-sass', '2.1'
