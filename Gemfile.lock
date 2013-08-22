@@ -143,7 +143,6 @@ GEM
       ref
     thor (0.17.0)
     tilt (1.3.5)
-    tlsmail (0.0.1)
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
@@ -175,5 +174,4 @@ DEPENDENCIES
   sass-rails (= 3.2.5)
   sqlite3 (= 1.3.5)
   therubyracer
-  tlsmail
   uglifier (>= 1.2.3)
